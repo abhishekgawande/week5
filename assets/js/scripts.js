@@ -29,6 +29,20 @@ jQuery(document).ready(function() {
 
         ////
         var name = $(this).find('input#name').val();
+	    
+	    var letters = /^[A-Za-z]+$/; 
+        if(name == '' && name.value.match(letters))
+            
+   
+     { 
+      return true; 
+     } 
+   else 
+     { 
+     alert("Invalid Charachters"); 
+     return false; 
+      
+        }
         var email = $(this).find('input#email').val();
         var add = $(this).find('input#add').val();
 		var city = $(this).find('input#city').val();
